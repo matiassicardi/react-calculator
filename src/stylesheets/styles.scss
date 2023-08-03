@@ -1,0 +1,193 @@
+@import 'normalize.scss';
+@import '_colors.scss';
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+//App styles
+.App {
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  background-color: $Grey-l-2;
+  //font-family: Lato, sans-serif;
+  display: flex;
+  //flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+//ScreenInput component styles
+.screen {
+  margin: 0px 0px 2px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 11px 30px 11px 11px;
+  font-size: 1.2rem;
+  height: 100%;
+  width: 100%;
+  background-color: $Grey-l-5;
+  color: $Grey-d-3;
+  border: 1px solid $Grey-l-5;
+  border-radius: 4px;
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+  cursor: pointer;
+}
+
+.input {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  //user-select: none;
+}
+
+.shake-img:hover {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes shake {
+  0%, 100% {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0);
+  }
+  20%, 40%, 60%, 80% {
+  -webkit-transform: translate3d(10px, 0, 0);
+  transform: translate3d(10px, 0, 0);
+  }
+  }
+  @keyframes shake {
+  0%, 100% {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0);
+  }
+  20%, 40%, 60%, 80% {
+  -webkit-transform: translate3d(10px, 0, 0);
+  transform: translate3d(10px, 0, 0);
+  }
+} 
+
+.intro-text {
+  display: contents;
+}
+
+.start-message {
+  max-width: 50%;
+  text-align: center;
+  font-size: 1rem;
+  font-style: italic;
+  color: $Grey-d-2;
+  
+  &.indicator {
+    font-size: 0.8rem;
+    margin-top: 50px;
+  }
+}
+
+.no-show {display: none;}
+
+//calculator container styles
+.main-container {
+  width: 450px;
+  //height: 90vh;
+  padding: 14px;
+  background-color: $Grey-l-2;
+  border-radius: 5px;
+}
+
+.line {
+  margin: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//RegularButton component styles
+.btn {
+  display: flex;
+  flex: 1 1;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  height: 50px;
+  margin: 4px;
+  background-color: $Grey-l-5;
+  color: #202124;
+  border: 1px solid $Grey-l-5;
+  border-radius: 4px;
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    background-color: darken($color: $Grey-l-5, $amount: 10%);
+    border: 1px solid darken($color: $Grey-l-5, $amount: 10%);
+  }
+}
+
+.btn-operator {
+  background-color: #dadce0;
+  color: #202124;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: darken($color: #dadce0, $amount: 10%);
+    border: 1px solid darken($color: #dadce0, $amount: 10%);
+  }
+}
+
+.btn-result {
+  background: $Purple;
+  color: #fff;
+  border: 1px solid $Purple;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: darken($color: $Purple, $amount: 10%);
+    border: 1px solid darken($color: $Purple, $amount: 10%);
+  }
+}
+
+.btn-scientific {
+  background-color: #c0c2c5;
+  color: #202124;
+  border: 1px solid #c0c2c5;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: darken($color: #c0c2c5, $amount: 10%);
+    border: 1px solid darken($color: #c0c2c5, $amount: 10%);
+  }
+}
+
+.btn-clear {
+  background: $Grey-d-3;
+  color: #fff;
+  border: 1px solid $Grey-d-3;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: darken($color: $Grey-d-3, $amount: 10%);
+    border: 1px solid darken($color: $Grey-d-3, $amount: 10%);
+  }
+}
+
+.shadow {
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+}
