@@ -2,6 +2,8 @@
 
 This calculator was made by Matias Sicardi <a href='https://github.com/matiassicardi'>github.com/matiassicardi</a> using ReactJS (and MathJS) during the <a href='https://www.youtube.com/watch?v=6Jfk8ic3KVk'>FreeCodeCamp ReactJS Course</a> taught by <a href='https://twitter.com/EstefaniaCassN'>Estefania Cassingena Navone</a>. To a better CSS code, SASS(SCSS) pre-processor was used. Find the calculator repo at <a href='https://github.com/matiassicardi/react-calculator'>github.com/matiassicardi/react-calculator
 
+![calculator caption](https://github.com/matiassicardi/react-calculator/blob/main/Screenshot%202023-08-03%20at%207.31.51%20PM.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
